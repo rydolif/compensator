@@ -1,0 +1,48 @@
+@import "libs";
+@import "base";
+
+
+.container{
+	width: 100%;
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+
+.header{
+
+	&__top {
+		padding: 15px 0;
+		background-color: $bg;
+		display: flex;
+		justify-content: space-between;
+
+		&_nav {
+			padding: 15px 0;
+		}
+
+		&_form {
+			display: flex;
+			justify-content: space-between;
+
+			button {
+				width: 20px;
+				height: 20px;
+				background-color: transparent;
+				border: none;
+				background-image: url(../img/dest/search.png);
+			}
+		}
+
+	}
+
+}
+
+.footer{
+	height: 500px;
+}
+
+
+// @import "page";
+@import "_media";

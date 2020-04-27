@@ -1,0 +1,66 @@
+
+//----------------------fonts---------------------
+$fonts: 'Roboto', sans-serif;
+//---------------------end-fonts---------------------
+
+//----------------------color---------------------
+$accent: #178fd6;
+$text: #292929;
+$bg: #edece8;
+//---------------------end-color---------------------
+
+body {
+	overflow-x: hidden;
+	position: relative;
+	min-width: 320px;
+	font-family: $fonts;
+	font-size: 14px;
+	color: $text;
+	line-height: 1.4;
+	font-weight: 400;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	line-height: 1.2;
+	margin: 0;
+	padding: 0;
+}
+
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+
+b, strong {
+	font-weight: 700;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a, button {
+	transition: all .6s;
+	&:focus,
+	&:hover {
+		outline: none;
+		text-decoration: none;
+		border: none;
+		outline: none;
+	}
+}
+
