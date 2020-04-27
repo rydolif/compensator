@@ -7,6 +7,7 @@ $fonts: 'Roboto', sans-serif;
 $accent: #178fd6;
 $text: #292929;
 $bg: #edece8;
+$red: #c44228;
 //---------------------end-color---------------------
 
 body {
@@ -55,6 +56,7 @@ p {
 
 a, button {
 	transition: all .6s;
+	color: $text;
 	&:focus,
 	&:hover {
 		outline: none;
@@ -64,3 +66,14 @@ a, button {
 	}
 }
 
+a {
+	&:focus,
+	&:hover {
+		color: $accent;
+	}
+}
+
+button {
+	padding: 0;
+	cursor: pointer;
+}

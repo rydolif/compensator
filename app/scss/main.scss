@@ -10,33 +10,175 @@
 }
 
 
+.link {
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: 1px;
+		left: 0;
+		height: 1px;
+		width: 0;
+		background-color: $red;
+		transition: all .6s;
+	}
+
+	&:hover,
+	&:focus {
+		&::before {
+			width: 100%;
+		}
+	}
+
+	&--reverse {
+		&::before {
+			width: 100%;
+		}
+
+		&:hover,
+		&:focus {
+			&::before {
+				width: 0;
+			}
+		}
+	}
+}
+
+
 .header{
 
-	&__top {
-		padding: 15px 0;
-		background-color: $bg;
+	&__container{
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	&__top {
+		padding: 10px 0;
+		background-color: $bg;
 
 		&_nav {
-			padding: 15px 0;
+			display: flex;
+			flex-wrap: wrap;
+
+			li {
+				margin-right: 40px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
 		}
 
 		&_form {
-			display: flex;
-			justify-content: space-between;
+			position: relative;
 
 			button {
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translate(0, -50%);
 				width: 20px;
 				height: 20px;
 				background-color: transparent;
 				border: none;
-				background-image: url(../img/dest/search.png);
+				background-image: url(../img/dest/header__search.png);
+				background-repeat: no-repeat;
+				background-position: center;
+
+				&:hover,
+				&:focus {
+					transform: translate(0, -50%) scale(.9);
+				}
 			}
 		}
 
 	}
 
+	&__main {
+		padding-top: 7px;
+		padding-bottom: 7px;
+
+		&_logo {
+			display: flex;
+			align-items: center;
+			line-height: 1.2;
+
+			span {
+				color: $text;
+			}
+
+			img {
+				margin-right: 6px;
+			}
+		}
+
+		&_info {
+			display: flex;
+			justify-content: space-between;
+			text-align: center;
+			width: 60%;
+
+			p {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+			}
+			
+			img {
+				margin-bottom: 7px;
+			}
+		}
+
+		&_order {
+			align-self: flex-end;
+
+			a {
+				@extend .link;
+				@extend .link--reverse;
+				color: $red;
+				font-size: 16px;
+
+				&:hover,
+				&:focus {
+					color: $red;
+				}
+			}
+
+		}
+	}
+}
+
+.nav {
+	background-color: $accent;
+	padding: 15px 0;
+
+	ul {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	a {
+		@extend .link;
+		color: #ffffff;
+		text-transform: uppercase;
+		font-size: 18px;
+		line-height: 1;
+
+		&::before {
+			background-color: #ffffff;
+		}
+
+		&:hover,
+		&:focus {
+			color: #ffffff;
+			
+		}
+	}
 }
 
 .footer{

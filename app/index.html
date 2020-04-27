@@ -17,41 +17,64 @@
 
 	<header class="header">
 
-		<div class="header__top container">
-			<ul class="header__top_nav">
-				<li><a href="#">О компании</a></li>
-				<li><a href="#">Выполненные проекты</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-			<form class="header__top_form">
-				<input type="search" placeholder="Поиск по сайту">
-				<button></button>
-			</form>
+		<div class="header__top">
+			<div class="header__container container">
+				<ul class="header__top_nav">
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Выполненные проекты</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<form class="header__top_form">
+					<input type="search" placeholder="Поиск по сайту">
+					<button></button>
+				</form>
+			</div>
 		</div>
 
-		<div class="header__container container">
+		<div class="header__main header__container container">
 
-			<a href="/" class="header__logo header__logo">
+			<a href="/" class="header__main_logo">
 				<img src="img/dest/logo.png" alt="logo">
+				<span>
+					Разработка и применение <br>сильфонных компенсаторов <br>с 1999 года
+				</span>
 			</a>
 
+			<div class="header__main_info">
+				<p>
+					<img src="img/dest/header__place.png" alt="">
+					г. Москва, <br>ул. Бардина, 4, с.1
+				</p>
+				<p>
+					<img src="img/dest/header__mail.png" alt="">
+					<a href="#">info@compensators-energy.ru</a>
+				</p>
+				<p>
+					<img src="img/dest/header__phone.png" alt="">
+					<a href="tel:+88006007323">+8 (800) 600-73-23</a>
+					<a href="tel:+74957826189">+7 (495) 782-61-89</a>
+				</p>
+				<p class="header__main_order"><a href="#">Заказать звонок</a></p>
+			</div>
+
+		</div>
+	</header>
+
+	<nav class="nav">
+		<div class="container">
 			<button class="hamburger" type="button">
 				<span class="hamburger__box">
 					<span class="hamburger__item"></span>
 				</span>
 			</button>
-
-			<nav class="nav">
-				<ul>
-					<li><a href="index.html">Головна</a></li>
-					<li><a href="catalog.html">Наші послуги</a></li>
-					<li><a href="about.html">Виконанні роботи</a></li>
-					<li><a href="contacts.html">Контакти</a></li>
-				</ul>
-			</nav>
-
+			<ul>
+				<li><a href="#">КОМПЕНСАТОРЫ ПРОТОН</a></li>
+				<li><a href="#">КОМПЕНСАТОРЫ ЭНЕРГИЯ</a></li>
+				<li><a href="#">НОВАЯ ПРОФИЛЬНАЯ ПРОДУКЦИЯ</a></li>
+				<li><a href="#">ДЛЯ ПРОЕКТИРОВЩИКОВ</a></li>
+			</ul>
 		</div>
-	</header>
+	</nav>
 
 	<main class="main">
 
