@@ -104,7 +104,7 @@
 		width: 100vw;
 		background-color: $accent;
 		z-index: 1001;
-		padding: 40px;
+		padding: 40px 20px;
 
 		ul {
 			width: 100%;
@@ -269,8 +269,14 @@
 		}
 	}
 
-	.new p {
-		font-size: 18px;
+	.new {
+		.btn {
+			min-width: 100%;
+		}
+
+		p {
+			font-size: 18px;
+		}
 	}
 
 	.advantages, .attention, .partners {
@@ -416,14 +422,24 @@
 
 	.nav {
 		top: 123px;
+		overflow: auto;
+		padding-bottom: 150px;
 
 		ul {
 			border-bottom: 1px solid #fff;
 		}
 		
+
+		&__info a {
+			text-transform: none;
+		}
 		&__menu-two {
 			display: flex !important;
 			flex-direction: column;
+
+			a {
+				text-transform: none;
+			}
 
 			li {
 				margin-right: 0;
@@ -511,12 +527,22 @@
 			font-size: 14px;
 			margin-bottom: 10px;
 		}
+
+		&_item:nth-child(3) {
+			padding: 10px;
+		}
 	}
 
 	.advantages__item {
 		width: 100%;
 		max-width: 320px;
 		margin: 0 auto 15px;
+	}
+
+	.attention {
+		br {
+			display: none;
+		}
 	}
 
 	.partners p {
