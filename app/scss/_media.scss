@@ -188,6 +188,11 @@
 	.footer__info h3 {
 		font-size: 14px;
 	}
+
+	.btn {
+		min-width: auto;
+		max-width: 300px;
+	}
 }
 
 
@@ -436,6 +441,10 @@
 				width: 100%;
 			}
 		}
+	}
+
+	.nav {
+		top: 176px;
 	}
 
 	.hero {
