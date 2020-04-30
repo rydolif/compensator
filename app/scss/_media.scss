@@ -97,7 +97,7 @@
 
 	.nav {
 		position: fixed;
-		top: 129px;
+		top: 124px;
 		left: 100%;
 		bottom: 0;
 		height: 100vh;
@@ -112,14 +112,11 @@
 			flex-direction: column;
 			align-items: center;
 			text-align: center;
+			margin-bottom: 20px;
 		}
 
 		li {
 			margin-bottom: 15px;
-
-			&:last-child {
-				margin-bottom: 0;
-			}
 		}
 
 		&--active {
@@ -239,6 +236,23 @@
 		}
 	}
 
+	.nav {
+
+		&__info {
+			display: block;
+			color: #ffffff;
+			text-align: center;
+
+			p {
+				margin-bottom: 15px;
+			}
+
+			br {
+				display: none;
+			}
+		}
+	}
+
 	.hero {
 		height: 280px;
 
@@ -315,10 +329,6 @@
 
 	}
 
-	.partners__col {
-		text-align: center;
-	}
-
 	.advantages__item {
 		width: 48%;
 		margin-bottom: 15px;
@@ -357,6 +367,12 @@
 				margin-bottom: 10px;
 			}
 		}
+
+		&__copy {
+			a {
+				display: block;
+			}
+		}
 	}
 
 	.btn {
@@ -384,9 +400,7 @@
 		&__top {
 
 			ul {
-				width: 100%;
-				justify-content: center;
-				margin-bottom: 10px;
+				display: none;
 			}
 
 			&_form {
@@ -401,7 +415,20 @@
 	}
 
 	.nav {
-		top: 157px;
+		top: 123px;
+
+		ul {
+			border-bottom: 1px solid #fff;
+		}
+		
+		&__menu-two {
+			display: flex !important;
+			flex-direction: column;
+
+			li {
+				margin-right: 0;
+			}
+		}
 	}
 
 	.new__content {
@@ -444,19 +471,15 @@
 	}
 
 	.nav {
-		top: 176px;
+		top: 145px;
 	}
 
 	.hero {
-		height: auto;
-
 		img {
 			height: 200px;
 		}
 
 		&__title {
-			padding: 20px 0;
-
 			p {
 				width: 75%;
 			}
@@ -497,6 +520,10 @@
 	}
 
 	.partners p {
+		font-size: 14px;
+	}
+
+	.footer {
 		font-size: 14px;
 	}
 }

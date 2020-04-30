@@ -66,7 +66,7 @@
 	}
 
 	&__top {
-		padding: 10px 0;
+		padding: 5px 0 10px;
 		background-color: $bg;
 
 		&_nav {
@@ -129,7 +129,7 @@
 		&_info {
 			@extend .list;
 			text-align: center;
-			width: 60%;
+			width: 58%;
 
 			p {
 				@extend .list;
@@ -166,6 +166,7 @@
 	background-color: $accent;
 	padding: 15px 0;
 	transition: all .6s;
+	
 
 	ul {
 		@extend .list;
@@ -187,6 +188,14 @@
 			color: #ffffff;
 			
 		}
+	}
+
+	&__menu-two {
+		display: none !important;
+	}
+
+	&__info {
+		display: none;
 	}
 
 }
@@ -225,6 +234,12 @@
 		span {
 			color: $blue;
 		}
+	}
+
+	&__slide {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 
 	&__container {
@@ -305,8 +320,9 @@
 	}
 
 	&__content {
-		padding: 80px 0;
-		width: 48%;
+		padding: 70px 0;
+		width: 45%;
+		margin-left: 5%;
 	}
 
 	&__img {
@@ -315,6 +331,8 @@
 
 		img {
 			max-width: 100%;
+			display: block;
+			margin: 0 auto;
 		}
 	}
 }
@@ -324,6 +342,10 @@
 	padding-top: 85px;
 	padding-bottom: 50px;
 
+	h2 {
+		margin-bottom: 45px;
+	}
+
 	&__container {
 		@extend .list;
 	}
@@ -331,7 +353,7 @@
 	&__item {
 		position: relative;
 		width: 31.5%;
-		min-height: 250px;
+		min-height: 245px;
 		border: 1px solid $border;
 		transition: all .6s;
 
@@ -367,6 +389,9 @@
 		}
 
 		&_info {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
 			height: 100%;
 			padding: 30px 15px 20px;
 			background-color: rgba($bg, .9);
@@ -390,7 +415,7 @@
 		li {
 			position: relative;
 			padding-left: 10px;
-			margin-bottom: 25px;
+			margin-bottom: 23px;
 			font-size: 18px;
 
 			&::before {
@@ -413,7 +438,7 @@
 
 
 .profile {
-	padding-bottom: 95px;
+	padding-bottom: 80px;
 
 	h2 {
 		font-weight: 400;
@@ -461,7 +486,6 @@
 			}
 		}
 
-
 		&_text {
 			width: 48%;
 			padding: 15px;
@@ -487,23 +511,26 @@
 			font-size: 18px;
 			margin-bottom: 25px;
 		}
+
 	}
 }
 
+
 .attention {
-	padding: 90px 0;
+	padding: 85px 0 95px;
 	background-color: $accent;
 	color: #ffffff;
 	text-align: center;
 
 	h3 {
 		font-size: 25px;
-		margin-bottom: 30px;
+		margin-bottom: 25px;
 	}
 	
 	p {
 		font-size: 18px;
 		margin-bottom: 35px;
+		line-height: 1.3;
 	}
 }
 
@@ -516,7 +543,7 @@
 	}
 
 	&__item {
-		width: 31%;
+		width: 32%;
 		text-align: center;
 
 		&:nth-child(-n+3) {
@@ -553,12 +580,13 @@
 	}
 
 	h2 {
-		margin-bottom: 45px;
+		margin-bottom: 40px;
 	}
 
 	p {
 		font-size: 18px;
 		margin-bottom: 15px;
+		line-height: 1.3;
 	}
 
 	&__slider {
@@ -631,13 +659,14 @@
 .map {
 	iframe {
 		width: 100%;
-		height: 390px;
+		height: 385px;
 		margin-bottom: -5px;
 	}
 }
 
 .footer {
 	background-color: $bg;
+	font-size: 16px;
 
 	&__container {
 		@extend .list;
@@ -649,7 +678,7 @@
 
 	&__info {
 		padding-top: 40px;
-		padding-bottom: 20px;
+		padding-bottom: 30px;
 		border-bottom: 1px solid $blue;
 
 		h3 {
@@ -659,7 +688,7 @@
 		}
 	
 		li {
-			margin-bottom: 15px;
+			margin-bottom: 20px;
 			line-height: 1.2;
 	
 			&:last-child {
@@ -705,6 +734,7 @@
 	&__copy {
 		padding: 15px;
 		text-align: center;
+		font-size: 14px;
 
 		p {
 			min-width: 220px;
