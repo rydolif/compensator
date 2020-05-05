@@ -190,6 +190,16 @@
 		min-width: auto;
 		max-width: 300px;
 	}
+
+	.project {
+		&__item {
+			margin-bottom: 15px;
+		}
+	}
+
+	.crumbs {
+		padding-bottom: 20px;
+	}
 }
 
 
