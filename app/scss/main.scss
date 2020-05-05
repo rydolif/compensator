@@ -6,6 +6,10 @@
 }
 
 
+.margin {
+	margin-bottom: 25px;
+}
+
 .container{
 	width: 100%;
 	max-width: 1170px;
@@ -761,8 +765,6 @@
 	padding-bottom: 50px;
 	font-size: 16px;
 	font-weight: 500;
-	// text-transform: uppercase;
-	// font-family: $title;
 
 	a {
 		color: $text;
@@ -843,6 +845,122 @@
 
 		&_checkbox {
 			font-size: 14px;
+		}
+	}
+}
+
+.about {
+	padding-bottom: 80px;
+
+	h3 {
+		font-size: 20px;
+		color: $blue;
+		margin-bottom: 30px;
+	}
+
+	p {
+		margin-bottom: 15px;
+		font-size: 18px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.active {
+		background-color: $accent;
+		border-color: $accent;
+		color: #ffffff;
+	}
+
+	&__list {
+		@extend .list;
+		margin-bottom: 50px;
+
+		li {
+			width: 23%;
+		}
+	}
+
+	&__one {
+		&_subtitle {
+			color: $border !important;
+			font-size: 22px !important;
+		}
+
+		img {
+			float: right;
+			margin-left: 25px;
+			margin-bottom: 10px;
+			max-width: 555px;
+		}
+	}
+
+	&__two {
+		
+		&_number {
+			@extend .list;
+			margin-bottom: 40px;
+
+			p {
+				width: 24%;
+				margin-bottom: 0;
+				color: $text-light;
+
+				&::before {
+					counter-increment: section;
+					content: "0" counter(section);
+					display: block;
+					color: $border;
+					font-weight: 700;
+					font-size: 30px;
+				}
+
+			}
+		}
+	}
+
+	&__three {
+		&_list {
+			@extend .list;
+			margin-top: 20px;
+		}
+
+		&_item {
+			width: 30%;
+			margin-bottom: 30px;
+		}
+
+		p {
+			color: $text-light;
+			line-height: 1.2;
+			margin-bottom: 5px;
+		}
+
+		b {
+			font-size: 20px;
+		}
+	}
+
+	&__four {
+
+		&_list {
+			@extend .list;
+		}
+
+		&_item {
+			width: 31%;
+		}
+
+		img {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		h4 {
+			font-size: 22px;
+			margin-bottom: 20px;
+			font-weight: 400;
 		}
 	}
 }
