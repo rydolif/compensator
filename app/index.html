@@ -52,7 +52,7 @@
 					<a href="tel:+88006007323">+8 (800) 600-73-23</a>
 					<a href="tel:+74957826189">+7 (495) 782-61-89</a>
 				</p>
-				<p class="header__main_order"><a href="#">Заказать звонок</a></p>
+				<p class="header__main_order order_open"><a href="#">Заказать звонок</a></p>
 			</div>
 
 			<button class="hamburger" type="button">
@@ -95,7 +95,7 @@
 
 			<div class="product__item">
 				<div class="product__item_wrap">
-					<img src="img/dest/product__item1.png" alt="">
+					<img src="img/main.png" alt="">
 					<h3>Главная</h3>
 				</div>
 				<div class="product__item_info">
@@ -105,7 +105,7 @@
 
 			<div class="product__item">
 				<div class="product__item_wrap">
-					<img src="img/dest/product__item1.png" alt="">
+					<img src="img/project.png" alt="">
 					<h3>выполненные проекты</h3>
 				</div>
 				<div class="product__item_info">
@@ -119,12 +119,6 @@
 					<h3>Компенсаторы <br>«Энергия-Термо»</h3>
 				</div>
 				<div class="product__item_info">
-					<p>Компенсаторы “Энергия-Аква”</p>
-					<ul>
-						<li>совершенная конструкция</li>
-						<li>лучшие материалы</li>
-						<li>повышенная надежность при <br> жестких условиях эксплуатации </li>
-					</ul>
 					<a href="#" class="btn">Подробнее</a>
 				</div>
 			</div>
@@ -200,38 +194,37 @@
 			</p>
 		</div>
 	</footer>
-<!-- 
-	<div class="modal" id="order">
-		<form action="sendmail.php" class="form" method="post">
 
-			<button class="close order_close" type="button">
+	<div class="modal" id="order">
+		<form class="form" method="post">
+
+			<button class="modal__close order_close" type="button">
 				<span></span>
 				<span></span>
 			</button>
 
-			<h3>Оставьте заявку, <br>мы свяжемся с Вами</h3>
+			<p>Укажите ваши данные. <br>Наши специалисты свяжутся с вами в кратчайшие сроки.</p>
 			<input type="hidden" name="subject" value="Узнать подробнее!">
 
-			<div class="">
-				<input type="text" name="name" placeholder="Имя" required>
+			<div class="modal__list">
+				<div class="">
+					<input type="text" name="name" placeholder="Ваше имя" required>
+				</div>
+				<div class="">
+					<input type="tel" name="phone" placeholder="Ваш телефон" required>
+				</div>
 			</div>
-			<div class="">
-				<input type="tel" name="phone" placeholder="Телефон" required>
+
+			<div class="modal__btn">
+				<button type="submit" class="btn btn--dark" name="submit">Отправить</button>
 			</div>
-			<div class="">
-				<button type="submit" class="btn" name="submit">Отправить</button>
+
+			<div class="modal__checkbox">
+				<input type="checkbox" id="remember">
+				<label for="remember" class="label">Оставляя свои данные я соглашаюсь с <a href="#">Политикой конфиденциальности</a></label>	
 			</div>
 		</form>
 	</div>
-
-	<div class="modal" id="thanks">
-		<button class="close thanks_close" type="button">
-			<span></span>
-			<span></span>
-		</button>
-		<h3>Спасибо за доверие!</h3>
-		<p>Мы обязательно с вами свяжемся!</p>
-	</div> -->
 
 	<script src="js/app.min.js"></script>
 

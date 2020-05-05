@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	});
 
 //-------------------------------попандер---------------------------------------
-	// $('.modal').popup({transition: 'all 0.3s'});
+	$('.modal').popup({transition: 'all 0.3s'});
 
 //------------------------------гамбургер-----------------------------
 	$('.hamburger').click(function() {

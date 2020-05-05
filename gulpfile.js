@@ -12,6 +12,9 @@ let paths = {
 		src: [
 			'node_modules/jquery/dist/jquery.min.js', // npm vendor example (npm i --save-dev jquery)
 			'node_modules/swiper/js/swiper.min.js', // npm vendor example (npm i --save-dev jquery)
+			'app/libs/jquery.popupoverlay.js', // npm vendor example (npm i --save-dev jquery)
+			'app/libs/jquery.mask.min.js', // npm vendor example (npm i --save-dev jquery)
+			'app/libs/jquery.validate.js', // npm vendor example (npm i --save-dev jquery)
 			baseDir + '/js/app.js' // app.js. Always at the end
 		],
 		dest: baseDir + '/js',

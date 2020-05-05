@@ -399,6 +399,55 @@
 		}
 	}
 
+	.modal {
+		max-width: 320px;
+		padding: 25px;
+
+		&__close {
+			top: 5px;
+			right: 5px;
+		}
+
+		p {
+			font-size: 16px;
+		}
+
+		input {
+			height: 40px;
+			line-height: 40px;
+
+			&::placeholder {
+				height: 40px;
+				line-height: 40px;
+			}
+		}
+
+		&__list {
+			margin-bottom: 15px;
+			div {
+				width: 100%;
+			}
+		}
+
+		&--project {
+			max-width: 100%;
+
+			p, ul {
+				font-size: 14px;
+			}
+
+			ul {
+				margin-bottom: 10px;
+				padding-bottom: 10px;
+			}
+
+			li, p {
+				margin-bottom: 5px;
+			}
+
+		}
+	}
+
 }
 
 
@@ -467,6 +516,19 @@
 
 	.footer__info {
 		padding-top: 30px;
+	}
+
+	.modal {
+		&--project {
+			&__img,
+			&__content {
+				width: 100%;
+			}
+
+			&__img {
+				margin-bottom: 15px;
+			}
+		}
 	}
 }
 
