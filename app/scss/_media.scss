@@ -200,6 +200,26 @@
 	.crumbs {
 		padding-bottom: 20px;
 	}
+
+	.contacts {
+		padding-bottom: 40px;
+		font-size: 14px;
+
+		&__form {
+
+			&_line {
+				div {
+					width: 49%;
+				}
+			}
+
+			&_textarea {
+				margin-bottom: 15px;
+			}
+		}
+
+	}
+
 }
 
 
@@ -448,6 +468,19 @@
 		}
 	}
 
+	.contacts {
+		&__info {
+			&_item {
+				width: 49%;
+				margin-bottom: 15px;
+
+				b {
+					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+
 }
 
 
@@ -528,6 +561,27 @@
 			&__img {
 				margin-bottom: 15px;
 			}
+		}
+	}
+
+	.contacts {
+		br {
+			display: none;
+		}
+
+		&__info_item {
+			width: 100%;
+			text-align: center;
+		}
+
+		&__form_line {
+			div {
+				width: 100%;
+			}
+		}
+
+		textarea {
+			height: 140px;
 		}
 	}
 }

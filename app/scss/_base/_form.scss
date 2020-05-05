@@ -38,8 +38,16 @@ input, select {
 	}
 }
 
-textarea::placeholder {
-	line-height: 1.4;
+textarea {
+	border: 1px solid $text;
+	height: 200px;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	&::placeholder {
+		line-height: 1.4;
+		color: $text;
+	}
 }
 
 label.error {
