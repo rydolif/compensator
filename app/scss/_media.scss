@@ -366,6 +366,19 @@
 		}
 	}
 
+	.search {
+		padding-bottom: 40px;
+
+		&__list {
+			margin-top: 20px;
+			font-size: 16px;
+
+			a {
+				padding: 10px;
+			}
+		}
+	}
+
 }
 
 
@@ -674,6 +687,14 @@
 
 			&:last-child {
 				margin-bottom: 0;
+			}
+		}
+	}
+
+	.search {
+		&__list {
+			li {
+				width: 48%;
 			}
 		}
 	}
@@ -1035,6 +1056,16 @@
 
 		input {
 			min-width: auto;
+		}
+
+		&__list {
+			li {
+				width: 100%;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
 		}
 	}
 

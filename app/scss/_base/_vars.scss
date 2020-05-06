@@ -79,6 +79,8 @@ p {
 a, button {
 	transition: all .6s;
 	color: $text;
+	cursor: pointer;
+	
 	&:focus,
 	&:hover {
 		outline: none;
