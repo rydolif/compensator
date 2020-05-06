@@ -1242,6 +1242,42 @@
 	}
 }
 
+.error {
+	padding-top: 80px;
+	padding-bottom: 60px;
+	text-align: center;
+	font-size: 18px;
+
+	h2 {
+		margin-bottom: 10px;
+	}
+
+	a {
+		color: $accent;
+		text-decoration: underline;
+
+		&:hover,
+		&:focus {
+			color: $blue;
+		}
+	}
+
+	&__title {
+		padding-top: 90px;
+		padding-bottom: 100px;
+	}
+
+	&__info {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+
+		&_item {
+			width: 30%;
+		}
+	}
+}
+
 
 .footer {
 	background-color: $bg;

@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Список страниц</title>
+	<title>404 ошибка</title>
 	<meta name="description" content="Startup HTML template OptimizedHTML 5">
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="img/favicon.ico">
@@ -90,80 +90,36 @@
 		</div>
 	</nav>
 
-	<section class="product">
-		<div class="product__container container">
+	<section class="error">
+		<div class="container">
 
-			<div class="product__item margin">
-				<div class="product__item_wrap">
-					<img src="img/main.png" alt="">
-					<h3>Главная</h3>
-				</div>
-				<div class="product__item_info">
-					<a href="main.html" class="btn">Подробнее</a>
-				</div>
+			<h2>Увы, такой страницы не существует.</h2>
+			<p>
+				Возможно, страница была удалена или ее вообще никогда не существовало.
+			</p>
+			<div class="error__title">
+				<img src="img/dest/error.png" alt="">
 			</div>
-
-			<div class="product__item margin">
-				<div class="product__item_wrap">
-					<img src="img/project.png" alt="">
-					<h3>выполненные проекты</h3>
-				</div>
-				<div class="product__item_info">
-					<a href="project.html" class="btn">Подробнее</a>
-				</div>
+			<div class="error__info">
+				<p class="error__info_item">Если вас интересует каталог нашей продукции, то перейдите <a href="#">сюда</a></p>
+				<p class="error__info_item">О наших выполненных проектах вы можете узнать <a href="#">здесь</a></p>
+				<p class="error__info_item">А на <a href="#">этой</a> странице мы рассказываем о своей компании</p>
 			</div>
-
-			<div class="product__item margin">
-				<div class="product__item_wrap">
-					<img src="img/contacts.png" alt="">
-					<h3>Контакты</h3>
-				</div>
-				<div class="product__item_info">
-					<a href="contacts.html" class="btn">Подробнее</a>
-				</div>
-			</div>
-
-			<div class="product__item margin">
-				<div class="product__item_wrap">
-					<img src="img/about.png" alt="">
-					<h3>О компании</h3>
-				</div>
-				<div class="product__item_info">
-					<a href="about.html" class="btn">Подробнее</a>
-				</div>
-			</div>
-
-			<div class="product__item margin">
-				<div class="product__item_wrap">
-					<img src="img/designers.png" alt="">
-					<h3>для проектировщиков</h3>
-				</div>
-				<div class="product__item_info">
-					<a href="designers.html" class="btn">Подробнее</a>
-				</div>
-			</div>
-
-			<div class="product__item margin">
-				<div class="product__item_wrap">
-					<img src="img/article.png" alt="">
-					<h3>Статья</h3>
-				</div>
-				<div class="product__item_info">
-					<a href="article.html" class="btn">Подробнее</a>
-				</div>
-			</div>
-
-			<div class="product__item margin">
-				<div class="product__item_wrap">
-					<img src="img/404.png" alt="">
-					<h3>404 ошибка</h3>
-				</div>
-				<div class="product__item_info">
-					<a href="404.html" class="btn">Подробнее</a>
-				</div>
-			</div>
-
 		</div>
+	</section>
+
+	<section class="attention">
+		<div class="container">
+			<p>
+				Нужна помощь в подборе компенсаторов, в проектировании или расчетах? <br>
+				Обращайтесь! Наши специалисты всегда готовы предложить оптимальное решение.
+			</p>
+			<a href="#" class="btn btn--dark question_open">Задать вопрос</a>
+		</div>
+	</section>
+
+	<section class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1854.6520878392832!2d37.568411614170344!3d55.698670304497625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54c9b3747f16d%3A0x369e045dd2796316!2z0YPQuy4g0JHQsNGA0LTQuNC90LAsIDQg0YHRgtGA0L7QtdC90LjQtSAxLCDQnNC-0YHQutCy0LAsIE1vc2NvdyBPYmxhc3QsINCg0L7RgdGB0LjRjywgMTE5MzM0!5e0!3m2!1sru!2sua!4v1588184831665!5m2!1sru!2sua" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 	</section>
 
 	<footer class="footer">
@@ -236,6 +192,78 @@
 		</div>
 	</footer>
 
+	<div class="modal" id="question">
+		<form class="form" method="post">
+
+			<button class="modal__close question_close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+
+			<p>Укажите ваши данные. <br>Наши специалисты свяжутся с вами в кратчайшие сроки.</p>
+			<input type="hidden" name="subject" value="Узнать подробнее!">
+
+			<div class="modal__list">
+				<div class="">
+					<input type="text" name="name" placeholder="Ваше имя" required>
+				</div>
+				<div class="">
+					<input type="text" name="company" placeholder="Ваша компания" required>
+				</div>
+				<div class="">
+					<input type="tel" name="phone" placeholder="Ваш телефон" required>
+				</div>
+				<div class="">
+					<input type="email" name="mail" placeholder="Ваш E-mail" required>
+				</div>
+			</div>
+
+			<div class="modal__btn">
+				<button type="submit" class="btn btn--dark" name="submit">Отправить</button>
+			</div>
+
+			<div class="modal__checkbox">
+				<input type="checkbox" id="remember1">
+				<label for="remember1" class="label">Оставляя свои данные я соглашаюсь с <a href="#">Политикой конфиденциальности</a></label>	
+			</div>
+		</form>
+	</div>
+
+	<div class="modal modal--project" id="project">
+		<form class="form" method="post">
+
+			<button class="modal__close project_close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+
+			<div class="modal--project__wrap">
+				<div class="modal--project__img">
+					<img src="img/dest/project__modal.png" alt="">
+				</div>
+				<div class="modal--project__content">
+					<h3>ЖК грибоедов</h3>
+					<ul>
+						<li><b>Город:</b> <span>Санкт-Петербург</span></li>
+						<li><b>Год:</b> <span>2018</span></li>
+						<li><b>Компрессор:</b> <span>Протон</span></li>
+						<li><b>Установлено компрессоров:</b> <span>3</span></li>
+					</ul>
+					<p>
+						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+						Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem 
+						nibh id elit.
+					</p>
+					<p>
+						Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
+						Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat 
+						auctor eu in elit.
+					</p>
+				</div>
+			</div>
+		</form>
+	</div>
+
 	<div class="modal" id="order">
 		<form class="form" method="post">
 
@@ -261,8 +289,8 @@
 			</div>
 
 			<div class="modal__checkbox">
-				<input type="checkbox" id="remember">
-				<label for="remember" class="label">Оставляя свои данные я соглашаюсь с <a href="#">Политикой конфиденциальности</a></label>	
+				<input type="checkbox" id="remember2">
+				<label for="remember2" class="label">Оставляя свои данные я соглашаюсь с <a href="#">Политикой конфиденциальности</a></label>	
 			</div>
 		</form>
 	</div>
