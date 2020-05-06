@@ -1279,6 +1279,69 @@
 }
 
 
+.search {
+	padding-bottom: 75px;
+	font-size: 18px;
+
+	h2 {
+		text-align: left;
+		margin-bottom: 15px;
+	}
+
+	h3 {
+		font-size: 18px;
+		margin-bottom: 12px;
+	}
+
+	a {
+		color: $accent;
+
+		&:hover,
+		&:focus {
+			color: $blue;
+		}
+	}
+
+	&__form {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 40px;
+
+		input {
+			border: 1px solid $border;
+			width: 75.7%;
+			height: 45px;
+			line-height: 45px;
+			margin-bottom: 4px;
+			font-size: 16px;
+
+			&::placeholder {
+				height: 45px;
+				line-height: 45px;
+				font-size: 16px;
+				color: $text;
+			}
+		}
+
+		button {
+			width: 24%;
+			background-color: $accent;
+			border: none;
+			color: #ffffff;
+			height: 45px;
+			text-transform: uppercase;
+			font-size: 16px;
+		}
+
+		label {
+			font-size: 14px;
+			color: $border;
+		}
+	}
+}
+
+
 .footer {
 	background-color: $bg;
 	font-size: 16px;
