@@ -478,6 +478,10 @@
 				font-size: 12px;
 			}
 		}
+
+		&--article {
+			padding: 40px 0;
+		}
 	}
 
 }
@@ -1270,7 +1274,7 @@
 			br {
 				display: none;
 			}
-			
+
 			p {
 				font-size: 14px;
 				margin-bottom: 10px;

@@ -1679,6 +1679,36 @@
 			border: 1px solid $border;
 		}
 	}
+
+	&--article {
+		padding: 85px 0;
+
+		&__subtitle {
+			text-transform: uppercase;
+		}
+
+		ul {
+			li {
+				padding-left: 15px;
+	
+				&::before {
+					left: 0;
+				}
+			}
+		}
+
+		p {
+			b {
+				display: block;
+			}
+
+			span {
+				color: $text;
+				margin-right: 25px;
+			}
+		}
+
+	}
 }
 
 
