@@ -5,7 +5,6 @@
 	overflow: hidden;
 }
 
-
 .margin {
 	margin-bottom: 25px;
 }
@@ -20,7 +19,6 @@
 	padding: 0 15px;
 	margin: 0 auto;
 }
-
 
 .link {
 	position: relative;
@@ -57,12 +55,12 @@
 	}
 }
 
-
 .list {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+
 
 .header{
 
@@ -362,7 +360,9 @@
 	}
 
 	&__container {
-		@extend .list;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
 	}
 
 	&__item {
@@ -790,6 +790,7 @@
 
 .crumbs {
 	display: flex;
+	flex-wrap: wrap;
 	padding-top: 20px;
 	padding-bottom: 50px;
 	font-size: 16px;
@@ -1732,6 +1733,54 @@
 	}
 }
 
+
+.card {
+	padding-bottom: 90px;
+
+	h3 {
+		font-size: 18px;
+		color: $blue;
+		margin-bottom: 35px;
+	}
+
+	p {
+		font-size: 18px;
+		margin-bottom: 15px;
+		line-height: 1.2;
+	}
+
+	&__container {
+		@extend .list;
+	}
+
+	&__col {
+		@extend .partners__col;
+		align-content: stretch;
+	}
+
+	&__img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid $border;
+		height: 100%;
+		padding: 5px;
+
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+
+	&__list {
+		li {
+			@extend .list;
+			border: 1px solid $border;
+			margin-bottom: 1px;
+			padding: 10px;
+		}
+	}
+}
 
 
 .footer {
