@@ -1697,6 +1697,12 @@
 			}
 		}
 
+		ol {
+			li {
+				margin-bottom: 0;
+			}
+		}
+
 		p {
 			b {
 				display: block;
@@ -1707,6 +1713,21 @@
 				margin-right: 25px;
 			}
 		}
+
+	}
+
+	&--search {
+		padding: 0 !important;
+
+		&__list {
+			margin-top: 0 !important;
+
+			li {
+				margin-bottom: 30px;
+				width: 23%;
+			}
+		}
+
 
 	}
 }

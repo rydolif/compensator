@@ -384,8 +384,17 @@
 			margin-top: 20px;
 			font-size: 16px;
 
+			li {
+				width: 24%;
+			}
+
 			a {
 				padding: 10px;
+				font-size: 14px;
+			}
+
+			b {
+				margin-bottom: 10px;
 			}
 		}
 	}
@@ -481,6 +490,14 @@
 
 		&--article {
 			padding: 40px 0;
+		}
+
+		&--search {
+			&__list {
+				li {
+					margin-bottom: 15px;
+				}
+			}
 		}
 	}
 
