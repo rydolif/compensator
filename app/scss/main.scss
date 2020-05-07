@@ -10,6 +10,10 @@
 	margin-bottom: 25px;
 }
 
+.bg {
+	background-color: $bg;
+}
+
 .container{
 	width: 100%;
 	max-width: 1170px;
@@ -1414,6 +1418,12 @@
 
 .compensator {
 
+	.active {
+		background-color: $accent;
+		border-color: $accent;
+		color: #ffffff;
+	}
+
 	&__container {
 		display: flex;
 		justify-content: space-between;
@@ -1482,12 +1492,6 @@
 	
 	&--padding {
 		padding: 0;
-	}
-
-	.active {
-		background-color: $accent;
-		border-color: $accent;
-		color: #ffffff;
 	}
 
 	&--grid {
@@ -1573,6 +1577,106 @@
 			&--10 {
 				grid-area: p;
 			}
+		}
+	}
+
+	&--characteristics {
+		padding-bottom: 90px;
+		font-size: 18px;
+
+		h3 {
+			font-size: 18px;
+			color: $blue;
+			margin-bottom: 10px;
+		}
+
+		p {
+			line-height: 1.2;
+		}
+
+		img {
+			width: 100%;
+			vertical-align: middle;
+		}
+
+		&__subtitle {
+			@extend .compensator--grid__subtitle;
+			text-align: left;
+		}
+
+		&__list {
+			columns: 3;
+		}
+
+		&__item {
+			border: 1px solid $border;
+			padding: 25px 20px;
+			margin-bottom: 30px;
+			page-break-inside: avoid;
+			break-inside: avoid;
+			min-height: 150px;
+
+			&:nth-child(3) {
+				margin-bottom: 0px;
+			}
+
+			&:nth-child(7) {
+				margin-bottom: 0px;
+			}
+		}
+	}
+
+	&--text {
+		padding: 80px 0;
+		text-align: center;
+
+		h2 {
+			margin-bottom: 30px;
+		}
+
+		p {
+			font-size: 18px;
+			margin-bottom: 20px;
+			line-height: 1.3;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&--table {
+		text-align: center;
+		padding-bottom: 90px;
+
+		h2 {
+			margin-bottom: 45px;
+		}
+
+		p {
+			font-size: 18px;
+			margin-bottom: 55px;
+			line-height: 1.3;
+		}
+
+		table {
+			border-spacing: 1px;
+			border-collapse: initial;
+			width: 100%;
+		}
+
+		th {
+			background-color: $accent;
+			color: #ffffff;
+			font-weight: 400;
+			
+			padding: 15px 5px;
+		}
+		
+		td {
+			padding: 15px;
+			background-color: #ffffff;
+			border: 1px solid $border;
 		}
 	}
 }
