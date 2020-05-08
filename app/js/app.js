@@ -34,10 +34,10 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
 	});
 
-//-------------------------------попандер---------------------------------------
+//-------------------------------modal---------------------------------------
 	$('.modal').popup({transition: 'all 0.3s'});
 
-//------------------------------гамбургер-----------------------------
+//------------------------------hamburger-----------------------------
 	$('.hamburger').click(function() {
 	  $(this).toggleClass('hamburger--active');
 	  $('.nav').toggleClass('nav--active');
