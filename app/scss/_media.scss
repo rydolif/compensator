@@ -58,6 +58,13 @@
 			margin-bottom: 5px;
 		}
 	}
+
+	.modal--project {
+		&__img,
+		&__content {
+			max-width: 48%;
+		}
+	}
 	
 }
 
@@ -672,6 +679,10 @@
 		}
 	}
 
+	.project__item .btn {
+		max-width: 90%;
+	}
+
 	.footer {
 
 		&__logo {
@@ -991,6 +1002,14 @@
 
 			&__img {
 				margin-bottom: 15px;
+			}
+		}
+
+		&--thanks {
+			padding: 25px 15px;
+
+			&__title {
+				font-size: 24px;
 			}
 		}
 	}
